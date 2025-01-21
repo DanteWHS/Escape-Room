@@ -70,3 +70,29 @@ iframe {
     margin-left:400px;
     border:none!important;
 }
+
+div.riddle{
+    width: 300px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 600px;
+    z-index: 0;
+    color: black;
+    font-style: normal;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 5px;
+}
+div.answer{
+    width: 300px;
+    position: absolute;
+    margin-top: 250px;
+    height: 50px;
+    margin-left: 600px;
+    z-index: 0;
+    color: black;
+    font-style: normal;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 5px;
+}

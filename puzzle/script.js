@@ -135,6 +135,10 @@ function check2(){
     let seven  = document.getElementsByClassName("seven");
     let eight  = document.getElementsByClassName("eight");
     let nine  = document.getElementsByClassName("empty");
+    if (one[0].id=="1"&&two[0].id=="2"&&three[0].id=="3"&&four[0].id=="4"&&five[0].id=="5"&&six[0].id=="6"&&sven[0].id=="7"&&eight[0].id=="8"&&empty[0].id=="empty"){
+        alert("complete");
+        
+    }
     one[0].onclick = undefined;
     two[0].onclick = undefined;
     three[0].onclick = undefined;

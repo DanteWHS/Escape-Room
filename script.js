@@ -22,6 +22,10 @@ function loadPopUp(image, game){
 function firstFloor(){
   document.getElementById("floorBox").src = "elevator.png";
   loadPopUp("janitorsCloset.png", firstMap);
+  let candle = document.getElementById("candleRiddle");
+  candle.style.zIndex = 101;
+  let answer = document.getElementById("answer");
+  answer.style.zIndex = 101;
   // firstMap();
 
   function firstMap(){
@@ -34,7 +38,11 @@ function firstFloor(){
 } //close parent
 
 
-function secondFloor(){
+function secondFloor(){  
+  let candle = document.getElementById("candleRiddle");
+  candle.style.zIndex = 0;
+  let answer = document.getElementById("answer");
+  answer.style.zIndex = 0;
   let thisFloor = document.getElementById("floorBox");
   thisFloor.src = "science.gif";
   thisFloor.addEventListener("click", showGame);
@@ -80,8 +88,11 @@ function eighthFloor(){
 
 }
 function groundFloor(){
+  let candle = document.getElementById("candleRiddle");
+  candle.style.zIndex = 0;
+  let answer = document.getElementById("answer");
+  answer.style.zIndex = 0;
   document.getElementById("popup").innerHTML="";
   document.getElementById("floorBox").src = "elevator.png";
   alert("Goodbye");
-
 }
